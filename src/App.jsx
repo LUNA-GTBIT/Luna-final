@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
-import Home from './components/mainPage/home'
+import Home from './components/mainPage/Home'
 
 function App() {
   return (
