@@ -53,4 +53,4 @@ git push -u origin <your-branch-name>
 
 **13.** Give an appropriate description to your PR.
 
-<h1 align="center"> LUNA </h1>
+<h1 align="center">⭐ LUNA ⭐ </h1>
