@@ -1,0 +1,28 @@
+.blog-website {
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 8px;
+}
+
+.blog-item {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.blog-item h2 {
+  margin-bottom: 10px;
+}
+
+.blog-item img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.blog-date {
+  font-size: 0.9em;
+  color: #aaa;
+}
