@@ -1,8 +1,58 @@
-# React + Vite
+# Luna Website
+## Figma : 
+[DESIGN](https://www.figma.com/design/wvZ72AYD8ZkK8VqzJgvU6B/Luna-about-page?node-id=0-1&p=f&t=KnLzvaYQtSrkwBpB-0)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Contribution Guidelines
 
-Currently, two official plugins are available:
+Fork the project ✨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**1.** Fork [this](https://github.com/harshDhiman3344/Luna-final) repository.
+
+
+**2.** Create a clone of your forked copy of the repository.
+```
+git clone https://github.com/[your-github-username]/Luna-final
+```
+
+**3.** Navigate to project directory
+```
+cd Luna-final
+```
+
+**4.** Always take a pull from the master branch before you start working 
+```
+git pull upstream master
+```
+
+**5.** Create a new branch for your changes
+```
+git checkout -b <your-branch-name>
+```
+
+**6.** Make your desired changes to the project.
+
+**7.** Track your changes
+```
+git add .
+```
+
+**8.** Commit your changes
+```
+git commit -m "relevant commit message"
+```
+Your commit message should reflect the changes you have made.
+
+**9.** Push your changes in your branch to remote repository
+```
+git push -u origin <your-branch-name>
+```
+
+**10.** Navigate to your fork, and you will see an option on top to **Compare and Pull Request**.
+
+**11.** Please compare your branch to master branch of the repo you are making PR to.
+
+**12.** Click on **Create Pull Request**.
+
+**13.** Give an appropriate description to your PR.
+
+<h1 align="center">⭐ LUNA ⭐ </h1>
