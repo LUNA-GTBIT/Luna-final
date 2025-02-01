@@ -1,4 +1,6 @@
 # Luna Website
+## Figma : 
+[DESIGN](https://www.figma.com/design/wvZ72AYD8ZkK8VqzJgvU6B/Luna-about-page?node-id=0-1&p=f&t=KnLzvaYQtSrkwBpB-0)
 
 ## Contribution Guidelines
 
