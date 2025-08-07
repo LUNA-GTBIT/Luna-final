@@ -10,7 +10,8 @@ const Community = () => {
   useEffect(() => {
     const fetchAPOD = async () => {
       try {
-        const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY');
+        const apiKey = import.meta.env.VITE_NASA_API_KEY || 'DEMO_KEY';
+        const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`);
         const data = await response.json();
         setApodData(data);
       } catch (error) {

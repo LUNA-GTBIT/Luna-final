@@ -61,6 +61,10 @@
 
 .apod-image {
   height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .apod-image img {
