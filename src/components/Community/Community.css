@@ -1,0 +1,246 @@
+/* Community.css */
+.community-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+  padding: 2rem 2rem 4rem 2rem;
+  color: white;
+}
+
+.community-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.community-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #00d4ff, #ffffff, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.community-header p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* APOD Section */
+.apod-section {
+  margin-bottom: 4rem;
+}
+
+.apod-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #9b59b6;
+}
+
+.apod-loading {
+  text-align: center;
+  color: #9b59b6;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+.apod-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.apod-image {
+  height: 400px;
+}
+
+.apod-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.apod-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.apod-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.apod-date {
+  color: #9b59b6;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.apod-explanation {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* Recent Events Section */
+.recent-events {
+  margin-bottom: 4rem;
+}
+
+.recent-events h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #00d4ff;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.event-card:hover {
+  border-color: #00d4ff;
+}
+
+.event-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.1);
+}
+
+.event-content {
+  padding: 1.5rem;
+}
+
+.event-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.event-date {
+  color: #00d4ff;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.event-description {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* Gallery Section */
+.gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #0084d4;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .community-container {
+    padding: 1rem;
+  }
+  
+  .community-header h1 {
+    font-size: 2rem;
+  }
+  
+  .recent-events h2,
+  .gallery h2,
+  .apod-section h2 {
+    font-size: 2rem;
+  }
+  
+  .events-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .apod-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .apod-image {
+    height: 250px;
+  }
+}
