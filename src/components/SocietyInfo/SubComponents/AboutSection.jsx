@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import "./AboutSection.css"; // CSS ko import karna mat bhulna
+import "./aboutSection.css"; // CSS ko import karna mat bhulna
 
 // Directly importing images
 import img1 from "./images/1.jpg";
